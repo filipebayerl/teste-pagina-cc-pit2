@@ -3,3 +3,5 @@
 
 Esse projetinho foi criado para teste do **Git e GitHub.**
 
+GPT cantou bonito, mas o objetivo foi alcançado.
+
