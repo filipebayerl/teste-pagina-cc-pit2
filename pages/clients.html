@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Clientes</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Clientes Cadastrados</h1>
+  </header>
+
+  <main>
+    <ul id="lista-clientes"></ul>
+  </main>
+
+  <script>
+    async function carregarClientes() {
+      try {
+        const response = await fetch('http://localhost:3000/clientes');
+        if (response.ok) {
+          const clientes = await response.json();
+          const lista = document.getElementById('lista-clientes');
+
+          clientes.forEach(cliente => {
+            const item = document.createElement('li');
+            item.textContent = `Nome: ${cliente.nome} | E-mail: ${cliente.email}`;
+            lista.appendChild(item);
+          });
+        } else {
+          console.error('Erro ao carregar clientes');
+        }
+      } catch (error) {
+        console.error('Erro ao conectar ao servidor', error);
+      }
+    }
+
+    // Carregar os clientes ao abrir a página
+    carregarClientes();
+  </script>
+</body>
+</html>
