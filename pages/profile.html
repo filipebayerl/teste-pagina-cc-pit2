@@ -25,46 +25,94 @@
   
   
 
+<main>
+  <h2>Complete seu cadastro</h2>
+  <form id="client-form" action="#" method="post">
+    <!-- Nome completo -->
+    <div class="form-group">
+      <label for="full-name">Nome Completo:</label>
+      <input type="text" id="full-name" name="full-name" placeholder="Digite seu nome completo" required>
+    </div>
+
+    <!-- E-mail -->
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+    </div>
+
+    <!-- Telefone -->
+    <div class="form-group">
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="(XX) XXXX-XXXX" required>
+    </div>
+
+    <!-- Endereço (opcional) -->
+    <div class="form-group">
+      <label for="address">Endereço (opcional):</label>
+      <textarea id="address" name="address" rows="4" placeholder="Digite seu endereço completo"></textarea>
+    </div>
+
+    <!-- Botões de ação -->
+    <div class="form-actions">
+      <button type="submit" class="btn-primary">Cadastrar</button>
+      <button type="reset" class="btn-secondary">Limpar</button>
+    </div>
+  </form>
+
+  <!-- Área para editar informações -->
+  <section id="edit-profile" style="margin-top: 2rem;">
+    <h3>Editar Informações</h3>
+    <p>Para alterar suas informações pessoais, <a href="edit-profile.html">clique aqui</a>.</p>
+  </section>
+</main>
+
+
+
+<!--
+
   <main>
     <h2>Complete seu cadastro</h2>
     <form id="client-form" action="#" method="post">
-      <!-- Nome completo -->
+      -- Nome completo --
       <div class="form-group">
         <label for="full-name">Nome Completo:</label>
         <input type="text" id="full-name" name="full-name" placeholder="Digite seu nome completo" required>
       </div>
 
-      <!-- E-mail -->
+      !-- E-mail --
       <div class="form-group">
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
       </div>
 
-      <!-- Telefone -->
+      !-- Telefone --
       <div class="form-group">
         <label for="phone">Telefone:</label>
         <input type="tel" id="phone" name="phone" placeholder="(XX) XXXX-XXXX" required>
       </div>
 
-      <!-- Endereço (opcional) -->
+      !-- Endereço (opcional) --
       <div class="form-group">
         <label for="address">Endereço (opcional):</label>
         <textarea id="address" name="address" rows="4" placeholder="Digite seu endereço completo"></textarea>
       </div>
 
-      <!-- Botões de ação -->
+      -- Botões de ação --
       <div class="form-actions">
         <button type="submit" class="btn-primary">Cadastrar</button>
         <button type="reset" class="btn-secondary">Limpar</button>
       </div>
     </form>
 
-    <!-- Área para editar informações -->
+    -- Área para editar informações --
     <section id="edit-profile">
       <h3>Editar Informações</h3>
       <p>Para alterar suas informações pessoais, <a href="edit-profile.html">clique aqui</a>.</p>
     </section>
   </main>
+
+-->
+
 
   <section>
     <h2>Cadastro de Cliente</h2>
